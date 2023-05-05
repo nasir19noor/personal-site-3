@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: sudo docker build . --file Dockerfile --tag nasir.id:$(date +%s) && sudo docker run --name nasir.id -p 80:80 -d nasir:$(date +%s)
+      run: sudo docker build . --file Dockerfile --tag nasir.id:latest && sudo docker run --name nasir.id -p 80:80 -d nasir:latest
